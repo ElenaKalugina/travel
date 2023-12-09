@@ -1,114 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Путешествия">
-    <title>Travel</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic-300.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/montserrat-v26-cyrillic-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header" data-test="hero">
-        <nav class="header__nav nav">
-              <div class="nav__container-btn">
-              <button class="nav__btn nav__btn-open" type="button" aria-label="Открыть меню.">
-                <svg width="26" height="26" role="img" focusable="false" aria-hidden="true">
-                  <use href="img/sprite.svg#icon-menu"></use>
-                </svg>
-              </button>
-              <button class="nav__btn nav__btn-close" type="button" aria-label="Закрыть меню.">
-                <svg width="26" height="26" role="img" focusable="false" aria-hidden="true">
-                  <use href="img/sprite.svg#icon-cross"></use>
-                </svg>
-              </button>
-            </div>
 
-              <a class="nav__logo" href="#">
-                <svg width="142" height="42" role="img" focusable="false" aria-hidden="true">
-                  <use href="/img/sprite.svg#logo"></use>
-                </svg>
-              </a>
-              <ul class="nav__menu-list">
-                <li class="nav__menu-item">
-                  <a class="nav__menu-link" href="#tours">Туры</a>
-                </li>
-                <li class="nav__menu-item">
-                  <a class="nav__menu-link" href="#training">Обучение</a>
-                </li>
-                <li class="nav__menu-item">
-                  <a class="nav__menu-link" href="#about">О нас</a>
-                </li>
-                <li class="nav__menu-item">
-                  <a class="nav__menu-link" href="#reviews">Отзывы</a>
-                </li>
-                <li class="nav__menu-item">
-                  <a class="nav__menu-link" href="#gallery">Фотографии</a>
-                </li>
-                <li class="nav__menu-item">
-                  <a class="nav__menu-link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Путешествия">
+  <title>Travel</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic-300.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic-500.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic-600.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic-700.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic-800.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+</head>
 
-              <div class="nav__phone">
-                <a class="nav__phone-link " href="tel:+88007253232">8&nbsp;800&nbsp;725-32-32</a>
-              </div>
+<body>
+  <div class="wrapper">
+    <header class="header" data-test="hero">
+      <nav class="header__nav nav" data-set="nav">
+        <div class="nav__container-btn">
+          <button class="nav__btn nav__btn-open" type="button" data-set="btn-open" aria-label="Открыть меню.">
+            <svg width="26" height="26" role="img" focusable="false" aria-hidden="true">
+              <use href="img/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <button class="nav__btn nav__btn-close" type="button" data-set="btn-close" aria-label="Закрыть меню.">
+            <svg width="26" height="26" role="img" focusable="false" aria-hidden="true">
+              <use href="img/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+        </div>
 
-          </nav>
-        <section class="header__hero hero">
-          <ul class="hero__slider-list">
-            <li class="hero__slider-item">
-              <div class="hero__slider-img">
+        <a class="nav__logo" href="#">
+          <svg width="142" height="42" role="img" focusable="false" aria-hidden="true">
+            <use href="/img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="nav__menu-list" data-set="menu">
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#tours">Туры</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#training">Обучение</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#about">О нас</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="nav__phone">
+          <a class="nav__phone-link " href="tel:+88007253232">8&nbsp;800&nbsp;725-32-32</a>
+        </div>
+
+      </nav>
+      <section class="header__hero hero">
+        <h1 class="visually-hidden">Lifetour - организация походов в горы.</h1>
+        <ul class="hero__list">
+          <li class="hero__item is-hidden">
+            <div class="hero__img">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/hero/hero-mobile1.webp 1x, img/hero/hero-mobile1@2x.webp 2x" width="350" height="568">
-              <source type="image/jpg" media="(max-width: 767px)"
-                srcset="img/hero/hero-mobile1.jpg 1x, img/hero/hero-mobile1@2x.jpg 2x" width="350" height="568">
-
-                <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/hero/hero-tablet768-1.webp 1x, img/hero/hero-tablet768-1@2x.webp 2x" width="768" height="1024">
-              <source type="image/jpg" media="(max-width: 1023px)"
-                srcset="img/hero/hero-tablet768-1.jpg 1x, img/hero/hero-tablet768-1@2x.jpg 2x" width="768" height="1024">
-
+                  srcset="img/hero/hero-mobile1.webp 1x, img/hero/hero-mobile1@2x.webp 2x" width="350" height="568">
+                <source type="image/jpg" media="(max-width: 767px)"
+                  srcset="img/hero/hero-mobile1.jpg 1x, img/hero/hero-mobile1@2x.jpg 2x" width="350" height="568">
 
                 <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="img/hero/hero-tablet1024-1.webp 1x, img/hero/hero-tablet1024-1@2x.webp 2x" width="1024" height="1024">
+                  srcset="img/hero/hero-tablet1.webp 1x, img/hero/hero-tablet1@2x.webp 2x" width="768" height="1024">
                 <source type="image/jpg" media="(max-width: 1199px)"
-                  srcset="img/hero/hero-tablet1024-1.jpg 1x, img/hero/hero-tablet1024-1@2x.jpg 2x" width="1024" height="1024">
+                  srcset="img/hero/hero-tablet1.jpg 1x, img/hero/hero-tablet1@2x.jpg 2x" width="768" height="1024">
 
                 <source type="image/webp" srcset="img/hero/hero-desktop1.webp 1x, img/hero/hero-desktop1@2x.webp 2x"
                   width="1440" height="800">
-                <img src="img/hero/hero-desktop1.jpg" srcset="img/hero/hero-desktop1@2x.jpg 2x" width="1440"
-                  height="800" alt="Вершины гор Кавказа.">
+                <img src="img/hero/hero-desktop1.jpg" srcset="img/hero/hero-desktop1@2x.jpg 2x" width="1440" height="800"
+                  alt="Вершины гор Кавказа.">
               </picture>
             </div>
-            </li>
-          </ul>
-        </section>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
+              <div class="hero__container">
+                  <h2>Захватывающие вершины Кавказа</h2>
+                  <p>В&nbsp;сопровождении опытных гидов
+                    вы&nbsp;пройдёте через&nbsp;потрясающие
+                    ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                  <a class="hero__btn btn" href="#">Смотреть тур</a>
+                <ul class="hero__details-list">
+                  <li class="hero__details-item">
+                    <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                      <use href="/img/sprite.svg#icon-moon"></use>
+                    </svg>
+                    <p>6 дней/5 ночей</p>
+                  </li>
+                  <li class="hero__details-item">
+                    <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                      <use href="/img/sprite.svg#icon-level"></use>
+                    </svg>
+                    <p>Высокая сложность</p>
+                  </li>
+                </ul>
+                <div class="hero__media-container" data-set="video">
+                  <div class="hero__media-img" data-set="video-img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)"
+                        srcset="img/hero/video-tablet.webp 1x, img/hero/video-tablet@2x.webp 2x" width="442" height="300">
+                      <source type="image/jpg" media="(max-width: 1199px)"
+                        srcset="img/hero/video-tablet.jpg 1x, img/hero/video-tablet@2x.jpg 2x" width="442" height="300">
 
+                      <source type="image/webp" srcset="img/hero/video-desktop.webp 1x, img/hero/video-desktop@2x.webp 2x" width="482"
+                        height="317">
+                      <img src="img/hero/video-desktop.jpg" srcset="img/hero/video-desktop@2x.jpg 2x" width="482" height="317"
+                        alt="Видеообзор.">
+                    </picture>
+                  </div>
+                  <button class="hero__play-btn" data-set="play-btn" type="button" aria-label="Открыть видео">
+                    <svg width="12" height="22" viewBox="0 0 12 22" role="img">
+                      <use href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+          </li>
+          <li class="hero__item is-hidden" >
+            <div class="hero__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero/hero-mobile2.webp 1x, img/hero/hero-mobile2@2x.webp 2x" width="350" height="568">
+                <source type="image/jpg" media="(max-width: 767px)"
+                  srcset="img/hero/hero-mobile2.jpg 1x, img/hero/hero-mobile2@2x.jpg 2x" width="350" height="568">
+
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-tablet2.webp 1x, img/hero/hero-tablet2@2x.webp 2x" width="768" height="1024">
+                <source type="image/jpg" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-tablet2.jpg 1x, img/hero/hero-tablet2@2x.jpg 2x" width="768" height="1024">
+
+                <source type="image/webp" srcset="img/hero/hero-desktop2.webp 1x, img/hero/hero-desktop2@2x.webp 2x"
+                  width="1440" height="800">
+                <img src="img/hero/hero-desktop2.jpg" srcset="img/hero/hero-desktop2@2x.jpg 2x" width="1440" height="800"
+                  alt="Горы Камчатки.">
+              </picture>
+            </div>
+              <div class="hero__container">
+                  <h2>Невероятная природа Камчатки</h2>
+                  <p>Незабываемое приключение, во&nbsp;время которого
+                    вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых
+                    нетронутых уголков дикой природы в&nbsp;мире.</p>
+                  <a class="hero__btn btn" href="#">Смотреть тур</a>
+                <ul class="hero__details-list">
+                  <li class="hero__details-item">
+                    <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                      <use href="/img/sprite.svg#icon-moon"></use>
+                    </svg>
+                    <p>9 дней/10 ночей</p>
+                  </li>
+                  <li class="hero__details-item">
+                    <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                      <use href="/img/sprite.svg#icon-level"></use>
+                    </svg>
+                    <p>Средняя сложность</p>
+                  </li>
+                </ul>
+                <div class="hero__media-container hero__media-container--photocards">
+                  <div class="hero__media-img" >
+                    <picture>
+                      <source type="image/webp" media="(max-width: 1199px)" width="442" height="365"
+                        srcset="img/hero/photocards-tablet.webp 1x, img/hero/photocards-tablet@2x.webp 2x">
+                      <source type="image/png" media="(max-width: 1199px)" width="365" height="365"
+                        srcset="img/hero/photocards-tablet.png 1x, img/hero/photocards-tablet@2x.png 2x">
+
+                      <source type="image/webp" width="410" height="459" srcset="img/hero/photocards-desktop.webp 1x, img/hero/photocards-desktop@2x.webp 2x" width="410" height="459">
+                      <img src="img/hero/photocards-desktop.png" width="410" height="459" srcset="img/hero/photocards-desktop@2x.png 2x" alt="Фотографии.">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li class="hero__item">
+            <div class="hero__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/hero/hero-mobile3.webp 1x, img/hero/hero-mobile3@2x.webp 2x" width="350" height="568">
+                <source type="image/jpg" media="(max-width: 767px)"
+                  srcset="img/hero/hero-mobile3.jpg 1x, img/hero/hero-mobile3@2x.jpg 2x" width="350" height="568">
+
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-tablet3.webp 1x, img/hero/hero-tablet3@2x.webp 2x" width="768" height="1024">
+                <source type="image/jpg" media="(max-width: 1199px)"
+                  srcset="img/hero/hero-tablet3.jpg 1x, img/hero/hero-tablet3@2x.jpg 2x" width="768" height="1024">
+
+                <source type="image/webp" srcset="img/hero/hero-desktop3.webp 1x, img/hero/hero-desktop3@2x.webp 2x"
+                  width="1440" height="800">
+                <img src="img/hero/hero-desktop3.jpg" srcset="img/hero/hero-desktop3@2x.jpg 2x" width="1440" height="800"
+                  alt="Горы Алтая.">
+              </picture>
+            </div>
+              <div class="hero__container">
+                  <h2>Магические пейзажи Алтайского Края</h2>
+                  <p>Алтайский трекинг-тур&nbsp;— это&nbsp;захватывающее приключение c&nbsp;посещением
+                    магических и&nbsp;захватывающих дух&nbsp;ландшафтов Алтайских&nbsp;гор.</p>
+                  <a class="hero__btn btn" href="#">Смотреть тур</a>
+                <ul class="hero__details-list">
+                  <li class="hero__details-item">
+                    <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                      <use href="/img/sprite.svg#icon-moon"></use>
+                    </svg>
+                    <p>8 дней/7 ночей</p>
+                  </li>
+                  <li class="hero__details-item">
+                    <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
+                      <use href="/img/sprite.svg#icon-level"></use>
+                    </svg>
+                    <p>Легкая сложность</p>
+                  </li>
+                </ul>
+                <div class="hero__media-container hero__media-container--audio">
+                  <iframe frameborder="0" style="border:none;width:395px;height:240px;" width="395" height="240" src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+                </div>
+              </div>
+          </li>
+        </ul>
+        <div class="hero__pagination">
+          <div class="swiper-pagination" data-set="hero-pagination">
+            <button class="hero__pagination-btn is-active" type="button" aria-label="1 слайд"></button>
+            <button class="hero__pagination-btn" type="button" aria-label="2 слайд"></button>
+            <button class="hero__pagination-btn" type="button" aria-label="3 слайд"></button>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

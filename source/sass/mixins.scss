@@ -37,6 +37,19 @@
   }
 }
 
+@mixin without-outline {
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin disabled {
+  &:disabled,
+  &.is-disabled {
+    @content;
+  }
+}
+
 // Desktop first
 
 @mixin vp-1919 {
@@ -47,6 +60,12 @@
 
 @mixin vp-1439 {
   @media (max-width: ($vp-1440 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1349 {
+  @media (max-width: ($vp-1350 - 1px)) {
     @content;
   }
 }

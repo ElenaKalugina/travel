@@ -1,37 +1,339 @@
 .hero {
   width: 100%;
+  min-height: 800px;
+
+  @include vp-767 {
+    height: 568px;
+  }
 }
 
-.hero__slider-list {
+.hero__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.hero__slider-img {
+.hero__item {
+  display: grid;
+}
+
+.hero__item.is-hidden {
+  display:none;
+}
+
+.hero__img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: -1;
+  position: relative;
   width: 100%;
   height: 800px;
 
   @include vp-1199 {
+    max-width: 1200px;
     height: 1024px;
   }
 
   @include vp-767 {
     max-width: 768px;
-    height: 1024px;
-  }
-
-  @include vp-349 {
-    min-width: 320px;
-    max-width: 350px;
     height: 568px;
   }
-
 }
 
-.hero__slider-img img {
+.hero__img img {
   object-fit: cover;
   width: 100%;
   background-color: $color-bg-image;
   background-size: cover;
+  height: 100%;
+}
+
+.hero__container {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 1200px;
+  width: calc(100% - 240px);
+  height: fit-content;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+
+  @include vp-1199 {
+    align-items: center;
+    padding-top: 212px;
+    padding-bottom: 97px;
+    width: calc(100% - 90px);
+  }
+
+  @include vp-767 {
+    width: calc(100% - 30px);
+    padding-top: 140px;
+    padding-bottom: 117px;
+  }
+}
+
+.hero__container h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  // max-width: 806px;
+  max-width: 944px;
+  font-size: 77px;
+  font-weight: 800;
+  line-height: 77px;
+  color: $color-default-white;
+  z-index: 2;
+
+  @include vp-1199 {
+   text-align: center;
+   margin-bottom: 12px;
+   font-size: 56px;
+   line-height: 56px;
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+}
+
+.hero__container p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 37px;
+  max-width: 464px;
+  color: $color-default-white;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include vp-1199 {
+    text-align: center;
+    margin-bottom: 27px;
+    max-width: 500px;
+  }
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 20px;
+    max-width: 332px;
+    margin-bottom: 60px;
+    padding: 0 25px;
+  }
+}
+
+.hero__btn {
+  margin-bottom: 133px;
+
+  @include vp-1199 {
+    margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
+.hero__details-list {
+  justify-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.hero__details-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 19px;
+  border: 1px solid $color-default-white;
+}
+
+.hero__details-item p {
+  padding: 0;
+  margin: 0;
+  color: $color-default-white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.hero__media-container {
+  position: absolute;
+  top: 329px;
+  right: 0;
+
+  &--photocards {
+    top: 187px;
+  }
+
+  &--audio {
+    overflow: hidden;
+    border-radius: 12px;
+    height: 220px;
+    top: 426px;
+  }
+
+  @include vp-1199 {
+    position: relative;
+    top: 0;
+    flex-shrink: 0;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+
+.hero__media-img {
+  width: 482px;
+  height: 317px;
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
+}
+
+.hero__media-container--photocards {
+  .hero__media-img {
+    width: 410px;
+    height: 459px;
+
+    @include vp-1199 {
+      width: 442px;
+      height: 365px;
+    }
+  }
+}
+
+.hero__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+  background-color: $color-transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  svg {
+    fill: $color-default-white;
+    stroke: $color-default-white;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-resolution-blue;
+    svg {
+      stroke: $color-default-black;
+    }
+  }
+
+  @include active {
+      border: 1px solid $color-resolution-blue;
+      background-color: $color-resolution-blue;
+    }
+
+  @include disabled {
+    border: 1px solid $color-accent;
+
+    svg {
+      fill: $color-accent;
+      stroke: $color-accent;
+      stroke-opacity: 0.1;
+    }
+  }
+}
+
+.hero__pagination {
+  max-width: 1200px;
+  width: calc(100% - 240px);
+  margin: 0 auto;
+  margin-top: -107px;
+  display: flex;
+  justify-content: flex-end;
+
+  @include vp-1199 {
+    width: 100%;
+    justify-content: center;
+    margin-top: -50px;
+    margin-left: -1px;
+  }
+
+  @include vp-767 {
+    margin-top: -48px;
+    margin-left: 0px;
+  }
+}
+
+.hero__pagination .swiper-pagination {
+  display: flex;
+  gap: 20px;
+}
+
+.hero__pagination-btn {
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+  background-color: transparent;
+  padding: 0;
+  flex-shrink: 0;
+  opacity: 1;
+  margin: 0;
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+
+  @include hover {
+    background-color: $color-default-white-50;
+  }
+
+  @include focus {
+    &::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $color-transparent;
+      border: 1px solid $color-default-white-50;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @include active {
+    background-color: $color-default-white-50;
+  }
+}
+
+.hero__pagination-btn.is-active {
+  background-color: $color-default-white;
+}
+
+.hero__pagination .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }

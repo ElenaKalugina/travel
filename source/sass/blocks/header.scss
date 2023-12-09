@@ -1,21 +1,13 @@
 .header {
   position: relative;
-  // display: grid;
-  // grid-template-columns: 1fr;
-
 }
 
 .header__nav {
   margin: 0 auto;
   position: absolute;
-  // grid-column: 1/2;
-  // grid-row: 1/2;
-
 }
 
 .header__hero {
-  // grid-column: 1/2;
-  // grid-row: 1/2;
   z-index: -1;
   margin: 0 auto;
 }

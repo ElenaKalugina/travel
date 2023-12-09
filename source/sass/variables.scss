@@ -4,9 +4,10 @@
 // Default
 
 $color-default-black:               #2d383f;
+$color-default-black-60: rgba(45, 56, 63, 0.60);
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
-$color-transparent-50:                 rgba(255, 255, 255, 0.5);
+$color-default-white-50:                 rgba(255, 255, 255, 0.5);
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -16,7 +17,7 @@ $color-torch-red:                   #ff1553;
 $color-accent: #0266c1;
 $color-resolution-blue: #1C3374;
 // Gradient
-
+$hero-gredient: linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0.00) 94.93%);
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
@@ -52,6 +53,7 @@ $vp-350:                            350px;
 $vp-768:                            768px;
 $vp-1024:                           1024px;
 $vp-1200:                           1200px;
+$vp-1350:                           1350px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
