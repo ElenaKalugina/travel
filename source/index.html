@@ -74,8 +74,9 @@
       </nav>
       <section class="header__hero hero">
         <h1 class="visually-hidden">Lifetour - организация походов в горы.</h1>
-        <ul class="hero__list">
-          <li class="hero__item is-hidden">
+        <div class="swiper" data-set="hero-slider">
+        <ul class="hero__list swiper-wrapper">
+          <li class="hero__item swiper-slide">
             <div class="hero__img">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
@@ -136,7 +137,7 @@
                 </div>
               </div>
           </li>
-          <li class="hero__item is-hidden" >
+          <li class="hero__item swiper-slide" >
             <div class="hero__img">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
@@ -190,7 +191,7 @@
                 </div>
               </div>
           </li>
-          <li class="hero__item">
+          <li class="hero__item swiper-slide">
             <div class="hero__img">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
@@ -236,17 +237,17 @@
         </ul>
         <div class="hero__pagination">
           <div class="swiper-pagination" data-set="hero-pagination">
-            <button class="hero__pagination-btn is-active" type="button" aria-label="1 слайд"></button>
+            <button class="hero__pagination-btn" type="button" aria-label="1 слайд"></button>
             <button class="hero__pagination-btn" type="button" aria-label="2 слайд"></button>
             <button class="hero__pagination-btn" type="button" aria-label="3 слайд"></button>
           </div>
         </div>
+      </div>
       </section>
     </header>
     <main>
       <section class="intro">
         <div class="container">
-
 
         </div>
       </section>
