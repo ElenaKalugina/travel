@@ -19,6 +19,7 @@ html {
   font-family: $ff-placeholder;
   color: $color-default-black;
 
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -31,12 +32,21 @@ html {
 body {
   width: 100%;
   height: 100%;
-
   background-color: $color-default-white;
+  min-width: $vp-320;
 }
 //при открытом меню блокирует скролл
 body.is-open {
   overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-default-black-60;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 a {

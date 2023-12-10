@@ -4,7 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu/menu-toggle.js';
 import {playVideo} from './modules/video/play-video.js';
 import {createSliderHero} from './modules/sliders/hero-slider.js';
-
+import {createSliderTours} from './modules/sliders/tours-slider.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   menuToggle();
   playVideo();
   createSliderHero();
+  createSliderTours();
 
   // Modules
   // ---------------------------------

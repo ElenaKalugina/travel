@@ -1,9 +1,11 @@
 .btn {
-  display: inline-flex;
+  display: flex;
   min-width: 180px;
   width: max-content;
   padding: 20px;
   justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
   color: $color-default-white;
   font-family: $ff-placeholder;
   font-weight: 500;
@@ -15,13 +17,62 @@
   cursor: pointer;
   transition: opacity $trans-default;
 
-  &:disabled {
-    opacity: 0.5;
-
-    pointer-events: none;
+  &--nav {
+    min-width: 0;
+    padding: 17px 12px;
+    width: 37px;
+    height: 35px;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-default-white;
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    border: 1px solid $color-resolution-blue;
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
+  @include disabled {
+    border: 1px solid $colod-disabled;
+    background-color: $colod-disabled;
+    color: $color-default-white;
+    pointer-events: none;
+  }
+}
+
+.btn--show-more {
+  padding: 10px;
+  background-color: transparent;
+  color: $color-default-black;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.64px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @include hover-focus {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $color-accent;
+  }
+
+  @include disabled {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $color-accent;
+    opacity: 0.1;
   }
 }

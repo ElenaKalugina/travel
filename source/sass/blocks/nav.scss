@@ -2,10 +2,10 @@
   background-color: $color-accent;
   padding: 26px 20px;
   max-width: 1200px;
-
+  width: 100%;
   display: grid;
   grid-template-columns: auto 1fr 145px;
-  width: calc(100% - 240px);
+ // width: calc(100% - 240px);
   margin: 0 auto;
   position: absolute;
   top: 0;
@@ -16,7 +16,6 @@
   transform-origin: center;
 
   @include vp-1199 {
-    width: 100%;
     padding: 20px 45px;
     grid-template-columns: min-content auto 129px;
   }

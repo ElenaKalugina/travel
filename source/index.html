@@ -246,9 +246,331 @@
       </section>
     </header>
     <main>
-      <section class="intro">
+      <section class="tours" data-test="tours" id="tours">
         <div class="container">
+          <div class="tours__container">
+            <div class="tours__header" data-text="Ближайшие туры">
+              <h2>Ближайшие туры</h2>
+              <div class="tours__slider-buttons">
+                <button class="tours__slider-btn btn btn--nav" data-set="tours-prev" type="button" aria-label="Предыдущий слайд">
+                  <svg width="14" height="9" viewBox="0 0 14 9" role="img" focusable="false" aria-hidden="true">
+                    <use href="/img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="tours__slider-btn btn btn--nav" data-set="tours-next" type="button" aria-label="Следующий слайд">
+                  <svg width="14" height="9" viewBox="0 0 14 9" role="img" focusable="false" aria-hidden="true">
+                    <use href="/img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="swiper" data-set="tours-slider">
+              <ul class="tours__list swiper-wrapper">
+                <li class="tours__item swiper-slide">
+                  <div class="tours__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide1.webp 1x, img/tours/tours-slide1@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide1.jpg 1x, img/tours/tours-slide1@2x.jpg 2x">
 
+                      <source type="image/webp" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide1.webp 1x, img/tours/tours-slide1@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide1.jpg 1x, img/tours/tours-slide1@2x.jpg 2x">
+
+                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-slide1.webp 1x, img/tours/tours-slide1@2x.webp 2x">
+                      <img src="img/tours/tours-slide1.jpg" width="380" height="416" srcset="img/tours/tours-slide1@2x.jpg 2x"
+                        alt="Гора Эльбрус.">
+                    </picture>
+                  </div>
+                  <div class="tours__details-container">
+                    <div class="tours__pin-container">
+                    <span class="tours__pin">
+                      <svg svg width="9" height="12" viewBox="0 0 9 12" role="img" focusable="false" aria-hidden="true">
+                        <use href="/img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      Кавказ
+                    </span>
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        4&nbsp;дня
+                      </li>
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        3&nbsp;ночи
+                      </li>
+                    </ul>
+                  </div>
+                    <h3>Путешествие вокруг&nbsp;Эльбруса</h3>
+                    <ul class="tours__info-list">
+                      <li class="tours__info-item">
+                        <span>Сложность</span>
+                        <div class="tours__stars">
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-stroke"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Даты набора:</span>
+                        <p>12.06–19.06</p>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Группа:</span>
+                        <p>до&nbsp;15&nbsp;чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <div class="tours__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide2.webp 1x, img/tours/tours-slide2@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide2.jpg 1x, img/tours/tours-slide2@2x.jpg 2x">
+
+                      <source type="image/webp" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide2.webp 1x, img/tours/tours-slide2@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide2.jpg 1x, img/tours/tours-slide2@2x.jpg 2x">
+
+                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-slide2.webp 1x, img/tours/tours-slide2@2x.webp 2x">
+                      <img src="img/tours/tours-slide2.jpg" width="380" height="416" srcset="img/tours/tours-slide2@2x.jpg 2x"
+                        alt="Гора Белуха.">
+                    </picture>
+                  </div>
+                  <div class="tours__details-container">
+                    <div class="tours__pin-container">
+                    <span class="tours__pin">
+                      <svg svg width="9" height="12" viewBox="0 0 9 12" role="img" focusable="false" aria-hidden="true">
+                        <use href="/img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      Алтай
+                    </span>
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        14&nbsp;дней
+                      </li>
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        13&nbsp;ночей
+                      </li>
+                    </ul>
+                    </div>
+                    <h3>Путь&nbsp;к&nbsp;подножию Белухи</h3>
+                    <ul class="tours__info-list">
+                      <li class="tours__info-item">
+                        <span>Сложность</span>
+                        <div class="tours__stars">
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-stroke"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-stroke"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Даты набора:</span>
+                        <p>14.06–23.06</p>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Группа:</span>
+                        <p>до&nbsp;25&nbsp;чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <div class="tours__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide3.webp 1x, img/tours/tours-slide3@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide3.jpg 1x, img/tours/tours-slide3@2x.jpg 2x">
+
+                      <source type="image/webp" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide3.webp 1x, img/tours/tours-slide3@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide3.jpg 1x, img/tours/tours-slide3@2x.jpg 2x">
+
+                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-slide3.webp 1x, img/tours/tours-slide3@2x.webp 2x">
+                      <img src="img/tours/tours-slide3.jpg" width="380" height="416" srcset="img/tours/tours-slide3@2x.jpg 2x"
+                        alt="Гора Фишт.">
+                    </picture>
+                  </div>
+                  <div class="tours__details-container">
+                    <div class="tours__pin-container">
+                    <span class="tours__pin">
+                      <svg svg width="9" height="12" viewBox="0 0 9 12" role="img" focusable="false" aria-hidden="true">
+                        <use href="/img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      Адыгея
+                    </span>
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        7&nbsp;дней
+                      </li>
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        6&nbsp;ночей
+                      </li>
+                    </ul>
+                    </div>
+                    <h3>Через&nbsp;Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                    <ul class="tours__info-list">
+                      <li class="tours__info-item">
+                        <span>Сложность</span>
+                        <div class="tours__stars">
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-stroke"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Даты набора:</span>
+                        <p>15.07–19.07</p>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Группа:</span>
+                        <p>до&nbsp;22&nbsp;чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="tours__item swiper-slide">
+                  <div class="tours__img">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide3.webp 1x, img/tours/tours-slide3@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)" width="320" height="416"
+                        srcset="img/tours/tours-slide3.jpg 1x, img/tours/tours-slide3@2x.jpg 2x">
+
+                      <source type="image/webp" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide3.webp 1x, img/tours/tours-slide3@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)" width="330" height="416"
+                        srcset="img/tours/tours-slide3.jpg 1x, img/tours/tours-slide3@2x.jpg 2x">
+
+                      <source type="image/webp" width="380" height="416" srcset="img/tours/tours-slide3.webp 1x, img/tours/tours-slide3@2x.webp 2x">
+                      <img src="img/tours/tours-slide3.jpg" width="380" height="416" srcset="img/tours/tours-slide3@2x.jpg 2x"
+                        alt="Гора Фишт.">
+                    </picture>
+                  </div>
+                  <div class="tours__details-container">
+                    <div class="tours__pin-container">
+                    <span class="tours__pin">
+                      <svg svg width="9" height="12" viewBox="0 0 9 12" role="img" focusable="false" aria-hidden="true">
+                        <use href="/img/sprite.svg#icon-pin"></use>
+                      </svg>
+                      Адыгея
+                    </span>
+                    <ul class="tours__details-list">
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-sun"></use>
+                        </svg>
+                        7&nbsp;дней
+                      </li>
+                      <li class="tours__details-item">
+                        <svg width="20" height="20" viewBox="0 0 20 20" role="img" focusable="false" aria-hidden="true">
+                          <use href="/img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        6&nbsp;ночей
+                      </li>
+                    </ul>
+                    </div>
+                    <h3>Через&nbsp;Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                    <ul class="tours__info-list">
+                      <li class="tours__info-item">
+                        <span>Сложность</span>
+                        <div class="tours__stars">
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-fill"></use>
+                          </svg>
+                          <svg width="16" height="14" viewBox="0 0 16 14" role="img" focusable="false" aria-hidden="true">
+                            <use href="/img/sprite.svg#star-stroke"></use>
+                          </svg>
+                        </div>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Даты набора:</span>
+                        <p>15.07–19.07</p>
+                      </li>
+                      <li class="tours__info-item">
+                        <span>Группа:</span>
+                        <p>до&nbsp;22&nbsp;чел.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="tours__show-more-btn btn btn--show-more" type="button">
+              Показать все
+              <svg width="14" height="9" viewBox="0 0 14 9" role="img" focusable="false" aria-hidden="true">
+                <use href="/img/sprite.svg#arrow-right-small"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
