@@ -1,0 +1,164 @@
+.training {
+  padding-top: 20px;
+  padding-bottom: 56px;
+
+  @include vp-1199 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.training__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.training__title {
+  margin-bottom: 37px;
+}
+
+.training__header {
+  margin-bottom: 56px;
+}
+
+.training__header p {
+  width: 820px;
+
+  @include vp-1199 {
+    width: 560px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.training__slider-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @include vp-1199 {
+   margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+   }
+}
+
+.training__slider-header h3{
+  margin: 0;
+  align-self: flex-start;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.training__slider-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+}
+
+.training__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 53px;
+
+  @include vp-1199 {
+    margin-bottom: 25px;
+  }
+}
+
+.training__item {
+  min-height: 356px;
+  width: 100%;
+  height: revert;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+  border: 1px solid $color-accent-10;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.training__img {
+  min-height: 200px;
+}
+
+.training__img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg-image;
+  background-size: cover;
+}
+
+.training__name-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.training__name-container h4 {
+  margin: 0;
+  width: 100px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.training__item p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.training__social {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  padding-top: 11px;
+  padding-right: 7px;
+  padding-bottom: 11px;
+  padding-left: 7px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  color: $color-default-black;
+  background-color: $color-default-white;
+  border: 1px solid $color-default-black-03;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    color: $color-default-black;
+    background-color: $color-default-white;
+    border: 1px solid $color-default-black;
+  }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+  }
+
+}

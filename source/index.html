@@ -316,13 +316,11 @@
               </div>
           </li>
         </ul>
-        <!-- <div class="hero__pagination"> -->
           <div class="hero__pagination container swiper-pagination" data-set="hero-pagination">
             <button class="hero__pagination-btn" type="button" aria-label="1 слайд"></button>
             <button class="hero__pagination-btn" type="button" aria-label="2 слайд"></button>
             <button class="hero__pagination-btn" type="button" aria-label="3 слайд"></button>
           </div>
-        <!-- </div> -->
       </div>
       </section>
     </header>
@@ -330,8 +328,8 @@
       <section class="tours" data-test="tours" id="tours">
         <div class="container">
           <div class="tours__container">
-            <div class="tours__header" data-text="Ближайшие туры">
-              <h2>Ближайшие туры</h2>
+            <div class="tours__header">
+              <h2 class="tours__title title" data-text="Ближайшие туры">Ближайшие туры</h2>
               <div class="tours__slider-buttons">
                 <button class="tours__slider-btn btn btn--nav" data-set="tours-prev" type="button" aria-label="Предыдущий слайд">
                   <svg width="14" height="9" viewBox="0 0 14 9" role="img" focusable="false" aria-hidden="true">
@@ -806,7 +804,7 @@
         <div class="container">
           <div class="training__container">
             <div class="training__header">
-              <h2 class="title" data-text="Обучение">Обучение</h2>
+              <h2 class="training__title title" data-text="Обучение">Обучение</h2>
               <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
                 Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
             </div>
@@ -825,8 +823,9 @@
                 </button>
               </div>
             </div>
-            <ul class="training__list">
-              <li class="training__item">
+            <div class="swiper" data-set="training-slider">
+            <ul class="training__list swiper-wrapper">
+              <li class="training__item swiper-slide">
                 <div class="training__img">
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)" width="290" height="200"
@@ -846,7 +845,7 @@
                 </div>
                 <div class="training__name-container">
                   <h4>Александр Прокофьев</h4>
-                  <a href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
+                  <a class="training__social" href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
                     <svg width="25" height="25" role="img">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
@@ -854,7 +853,92 @@
                 </div>
                 <p>Строгий и&nbsp;внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.</p>
               </li>
+              <li class="training__item swiper-slide">
+                <div class="training__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" width="290" height="200"
+                      srcset="img/training/training2.webp 1x, img/training/training2@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 767px)" width="290" height="200"
+                      srcset="img/training/training2.png 1x, img/training/training2@2x.png 2x">
+
+                    <source type="image/webp" media="(max-width: 1199px)" width="183" height="200"
+                      srcset="img/training/training2.webp 1x, img/training/training2@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 1199px)" width="183" height="200"
+                      srcset="img/training/training2.png 1x, img/training/training2@2x.png 2x">
+
+                    <source type="image/webp" width="255" height="200" srcset="img/training/training2.webp 1x, img/training/training2@2x.webp 2x">
+                    <img src="img/training/training2.png" width="255" height="200" srcset="img/training/training2@2x.png 2x"
+                      alt="Фото Светланы Афигеновой.">
+                  </picture>
+                </div>
+                <div class="training__name-container">
+                  <h4>Светлана Афиногенова</h4>
+                  <a class="training__social" href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
+                    <svg width="25" height="25" role="img">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p>Видеть мир&nbsp;вокруг, познавать его&nbsp;опасности, находить друг друга, становиться ближе, чувствоватьм&nbsp;— в&nbsp;этом назначение жизни.</p>
+              </li>
+              <li class="training__item swiper-slide">
+                <div class="training__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" width="290" height="200"
+                      srcset="img/training/training3.webp 1x, img/training/training3@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 767px)" width="290" height="200"
+                      srcset="img/training/training3.png 1x, img/training/training3@2x.png 2x">
+
+                    <source type="image/webp" media="(max-width: 1199px)" width="183" height="200"
+                      srcset="img/training/training3.webp 1x, img/training/training3@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 1199px)" width="183" height="200"
+                      srcset="img/training/training3.png 1x, img/training/training3@2x.png 2x">
+
+                    <source type="image/webp" width="255" height="200" srcset="img/training/training3.webp 1x, img/training/training3@2x.webp 2x">
+                    <img src="img/training/training3.png" width="255" height="200" srcset="img/training/training3@2x.png 2x"
+                      alt="Фото Надежды Колесниченко.">
+                  </picture>
+                </div>
+                <div class="training__name-container">
+                  <h4>Надежда Колесниченко</h4>
+                  <a href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
+                    <svg width="25" height="25" role="img">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p>Участники говорят, что&nbsp;Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и&nbsp;уверенно.</p>
+              </li>
+              <li class="training__item swiper-slide">
+                <div class="training__img">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" width="290" height="200"
+                      srcset="img/training/training4.webp 1x, img/training/training4@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 767px)" width="290" height="200"
+                      srcset="img/training/training4.png 1x, img/training/training4@2x.png 2x">
+
+                    <source type="image/webp" media="(max-width: 1199px)" width="183" height="200"
+                      srcset="img/training/training4.webp 1x, img/training/training4@2x.webp 2x">
+                    <source type="image/png" media="(max-width: 1199px)" width="183" height="200"
+                      srcset="img/training/training4.png 1x, img/training/training4@2x.png 2x">
+
+                    <source type="image/webp" width="255" height="200" srcset="img/training/training4.webp 1x, img/training/training4@2x.webp 2x">
+                    <img src="img/training/training4.png" width="255" height="200" srcset="img/training/training4@2x.png 2x"
+                      alt="Фото Федора Кайгородова.">
+                  </picture>
+                </div>
+                <div class="training__name-container">
+                  <h4>Федор Кайгородов</h4>
+                  <a href="https://vk.com/htmlacademy" aria-label="Вконтакте.">
+                    <svg width="25" height="25" role="img">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </div>
+                <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+              </li>
             </ul>
+          </div>
           </div>
         </div>
       </section>
