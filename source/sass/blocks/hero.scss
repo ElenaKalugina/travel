@@ -4,7 +4,6 @@
 
   @include vp-767 {
     min-height: 568px;
-   // height: 568px;
   }
 }
 
@@ -31,12 +30,14 @@
   height: 800px;
 
   @include vp-1199 {
-    max-width: 1200px;
+    height: 1024px;
+  }
+
+  @include vp-1023 {
     height: 1024px;
   }
 
   @include vp-767 {
-    max-width: 768px;
     height: 568px;
   }
 }
@@ -80,7 +81,6 @@
   padding: 0;
   margin: 0;
   margin-bottom: 22px;
-  // max-width: 806px;
   max-width: 944px;
   font-size: 77px;
   font-weight: 800;
@@ -202,7 +202,6 @@
   }
 }
 
-
 .hero__media-img {
   width: 482px;
   height: 317px;
@@ -268,77 +267,56 @@
   }
 }
 
-.hero__pagination {
-  margin-left: auto;
-  width: 70px;
-  position: absolute;
-  bottom: 87px;
-  //right: 120px;
-  right:calc((100vw - 1200px)/2);
+.swiper {
+  .hero__pagination {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-left: 500px;
+    gap: 12px;
+    right: -7px;
+    bottom: 97px;
 
-  @include vp-1439 {
-    right: 120px;
-  }
+    @include vp-1199 {
+      padding-left: 45px;
+      bottom: 40px;
+      right: 0;
+      justify-content: center;
+    }
 
-  @include vp-1199 {
-    position: relative;
-    margin: 0 auto;
-    right: 0;
-    bottom: 30px;
-  }
-
-  @include vp-767 {
-    width: 64px;
-  }
-}
-
-.hero__pagination .swiper-pagination {
-  display: flex;
-  gap: 20px;
-}
-
-.hero__pagination .swiper-pagination .swiper-pagination-bullet {
-  display: block;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid $color-default-white;
-  background-color: transparent;
-  padding: 0;
-  flex-shrink: 0;
-  opacity: 1;
-  margin: 0;
-
-  @include vp-767 {
-    width: 8px;
-    height: 8px;
-  }
-
-  @include hover {
-    background-color: $color-default-white-50;
-  }
-
-  @include focus {
-    &::before {
-      content: "";
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background-color: $color-transparent;
-      border: 1px solid $color-default-white-50;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    @include vp-767 {
+      padding-left: 15px;
     }
   }
 
-  @include active {
-    background-color: $color-default-white-50;
-  }
-}
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid $color-default-white;
+    background-color: $color-transparent;
+    opacity: 1;
 
-.hero__pagination .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: $color-default-white;
+
+    @include hover {
+      background-color: $color-default-white-50;
+    }
+
+    @include active {
+      background-color: $color-default-white-50;
+    }
+
+    @include focus {
+      outline-offset: 1px;
+      outline: 1px solid $color-default-white-50;
+    }
+
+    @include vp-767 {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $color-default-white;
+  }
 }
