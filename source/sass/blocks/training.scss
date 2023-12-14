@@ -1,14 +1,14 @@
 .training {
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 56px;
 
   @include vp-1199 {
-    padding-top: 45px;
+    padding-top: 32px;
     padding-bottom: 45px;
   }
 
   @include vp-767 {
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 20px;
   }
 }
@@ -20,14 +20,29 @@
 }
 
 .training__title {
-  margin-bottom: 37px;
+  margin-bottom: 31px;
+
+  @include vp-1199 {
+  margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 16px;
+    line-height: 22px;
+    font-size: 22px;
+  }
 }
 
 .training__header {
-  margin-bottom: 56px;
+  margin-bottom: 61px;
+
+  @include vp-1199 {
+    margin-bottom: 30px;
+  }
 }
 
 .training__header p {
+  margin: 0;
   width: 820px;
 
   @include vp-1199 {
@@ -36,6 +51,8 @@
 
   @include vp-767 {
     width: 100%;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -43,20 +60,21 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   width: 100%;
-  margin-bottom: 20px;
+  min-height: 55px;
+  margin-bottom: 17px;
 
   @include vp-1199 {
-   margin-bottom: 30px;
+   margin-bottom: 27px;
   }
 
   @include vp-767 {
-    margin-bottom: 25px;
-   }
+    margin-bottom: 22px;
+  }
+
 }
 
-.training__slider-header h3{
+.training__slider-header h3 {
   margin: 0;
   align-self: flex-start;
   font-size: 21px;
@@ -68,6 +86,11 @@
   display: flex;
   gap: 4px;
   align-items: flex-end;
+  margin-bottom: 2px;
+
+  @include vp-767 {
+    margin-bottom: 3px;
+  }
 }
 
 .training__list {
@@ -76,10 +99,14 @@
   margin: 0;
   display:flex;
   justify-content: space-between;
-  margin-bottom: 53px;
+  margin-bottom: 58px;
 
   @include vp-1199 {
     margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+        margin-bottom: 9px;
   }
 }
 
@@ -87,7 +114,8 @@
   min-height: 356px;
   width: 100%;
   height: revert;
-  padding: 15px;
+  padding: 14px;
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -97,11 +125,14 @@
 
   @include vp-767 {
     width: 100%;
+    padding-top: 13px;
+    gap: 16px;
   }
 }
 
 .training__img {
   min-height: 200px;
+  height: 200px;
 }
 
 .training__img img{
@@ -134,18 +165,14 @@
 
 .training__social {
   display: flex;
-  width: 30px;
-  height: 30px;
-  padding-top: 11px;
-  padding-right: 7px;
-  padding-bottom: 11px;
-  padding-left: 7px;
+  width: 25px;
+  height: 23px;
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
   color: $color-default-black;
   background-color: $color-default-white;
-  border: 1px solid $color-default-black-03;
+  border: 1px solid $color-elefant-30;
   cursor: pointer;
   transition: opacity $trans-default;
 
@@ -160,5 +187,225 @@
     background-color: $color-accent;
     border: 1px solid $color-accent;
   }
+}
 
+.training__process-container h3 {
+  margin-bottom: 29px;
+
+  @include vp-1199 {
+    margin-bottom: 44px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.training__process-list {
+  position: relative;
+  list-style: none;
+  margin:0;
+  padding: 0;
+  padding-bottom: 14px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 253px 253px 253px 1fr;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 4px;
+    left: 10px;
+    width: 100%;
+    height: 1px;
+    background-color: $color-accent-10;
+    box-shadow: calc((100vw - 1200px)/2) 0 0 0 $color-accent-10;
+  }
+
+  @include vp-1199 {
+    grid-template-columns: repeat(2, 343px);
+    row-gap: 47px;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 29px;
+    padding: 0;
+
+    &::after {
+      display: block;
+      top: 15px;
+      left: 7px;
+      width: 1px;
+      height: calc(100% - 30px);
+    }
+  }
+}
+
+.training__process-item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: 10px;
+  padding: 0;
+  gap: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -16px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $color-accent;
+  }
+
+  @include vp-1199 {
+    gap: 10px;
+    padding-bottom: 24px;
+
+    //по-умолчаниювсе синие точки внизу
+    &::after {
+      bottom: -1px;
+      left: 0;
+    }
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 29px;
+    align-items: center;
+    gap: 14px;
+
+    &::after {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    svg {
+      width: 21px;
+      height: 21px;
+      margin-top:-5px
+    }
+  }
+
+}
+
+//синие точки сверху
+.training__process-item--dot-top {
+  @include vp-1199 {
+    padding-bottom: 0;
+    padding-top: 24px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -6px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $color-accent;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+    &::after {
+      top: 15px;
+      left: 0;
+    }
+  }
+}
+
+.training__process-item--mountain {
+  @include vp-1199 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @include vp-767 {
+    grid-row: 4/5;
+  }
+}
+
+.training__process-item p {
+  margin: 0;
+  margin-top: -3px;
+  width: 198px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+//полоска слева направо точка внизу
+.training__process-item--right p {
+  @include vp-1199 {
+    &::after {
+    position: absolute;
+    content: "";
+    bottom: 7px;
+    left: 0;
+    width: calc(100% + 17px);
+    height: 1px;
+    background-color: $color-accent-10;
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+//полоска слева направо точка наверху
+.training__process-item--dot-top.training__process-item--right p {
+  @include vp-1199 {
+    &::after {
+      top: 0;
+    }
+  }
+}
+
+.training__process-item--down p {
+  @include vp-1199 {
+    &::after {
+    position: absolute;
+    content: "";
+    bottom: -41px;
+    left: 7px;
+    width: 1px;
+    height: 50px;
+    background-color: $color-accent-10;
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      display: none;
+    }
+  }
 }

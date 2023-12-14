@@ -45,17 +45,25 @@
 }
 
 .btn--show-more {
+  position: relative;
   padding: 10px;
+  padding-right: 30px;
   background-color: transparent;
   color: $color-default-black;
   align-items: center;
-  gap: 12px;
+  min-width: 217px;
   width: fit-content;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.64px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+   }
 
   @include hover-focus {
     border: 1px solid transparent;
@@ -75,4 +83,10 @@
     color: $color-accent;
     opacity: 0.1;
   }
+}
+
+.btn--show-more svg {
+  position: absolute;
+  top: 10px;
+  right: 0;
 }

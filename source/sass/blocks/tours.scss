@@ -1,15 +1,16 @@
 .tours {
-  padding-top: 100px;
+
+  padding-top: 103px;
   padding-bottom: 100px;
 
   @include vp-1199 {
-    padding-top: 45px;
+    padding-top: 48px;
     padding-bottom: 45px;
   }
 
   @include vp-767 {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
   }
 }
 
@@ -17,6 +18,34 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+}
+
+.tours__background {
+  position: absolute;
+  z-index: -10;
+  overflow: hidden;
+  top: -103px;
+  right: -121px;
+  height: 1630px;
+
+  @include vp-1199 {
+    top: -45px;
+    right: -45px;
+    height: 1364px;
+  }
+
+  @include vp-767 {
+    right: -15px;
+    top: 90px;
+    height: 595px;
+  }
+}
+
+.tours__background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .tours__header {
@@ -25,7 +54,11 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
+
+  @include vp-1199 {
+    margin-bottom: 22px;
+   }
 
   @include vp-767 {
    margin-bottom: 25px;
@@ -35,6 +68,11 @@
 .tours__slider-buttons {
   display: flex;
   gap: 4px;
+  margin-bottom: 3px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+   }
 }
 
 .tours__list {
@@ -51,7 +89,7 @@
 }
 
 .tours__item {
-  min-height: 416px;
+  height: 416px;
   display: grid;
 
   @include vp-767 {
@@ -102,6 +140,7 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  width: 275px;
 
   &::after {
     position: absolute;
@@ -113,6 +152,10 @@
     background-color: $color-default-white;
     opacity: 0.2;
   }
+
+  @include vp-1199 {
+    width: 100%
+  }
 }
 
 .tours__details-list {
@@ -122,7 +165,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  gap: 14px;
+  gap: 15px;
 }
 
 .tours__details-item {
@@ -140,12 +183,15 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  gap: 6px;
+  gap: 10px;
   color: $color-default-white;
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
-  padding: 6px 12px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 9px;
+  padding-left: 15px;;
   background-color: $color-accent;
 }
 
@@ -157,11 +203,19 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
+
+}
+
+.tours__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .tours__stars {
   display: flex;
   flex-wrap: wrap;
+  gap: 1px;
   align-content: center;
 }
 
@@ -180,7 +234,6 @@
   line-height: 13px;
   padding: 0;
   margin: 0;
-  margin-top: 6px;
 }
 
 .tours__show-more-btn {
