@@ -1,0 +1,147 @@
+.about {
+  padding-top: 13px;
+  min-height: 530px;
+
+  @include vp-1199 {
+    padding-top: 15px;
+    min-height: 541px;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+  }
+}
+
+.about__container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    min-width: $vp-320;
+  }
+}
+
+.about__clouds {
+  position: absolute;
+  z-index: -20;
+  top: -169px;
+  right: 0;
+  height: 280px;
+
+  @include vp-1199 {
+    top: -286px;
+  }
+}
+
+.about__clouds img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.about__img {
+  position: absolute;
+  z-index: -10;
+  top: -3px;
+  left: 0;
+  height: 474px;
+
+  @include vp-1199 {
+    height: 350px;
+    top: 72px;
+  }
+
+  @include vp-767 {
+    height: 400px;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+.about__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg-image;
+  background-size: cover;
+}
+
+.about__info-container {
+  margin-left: 615px;
+
+  @include vp-1199 {
+    margin-left: 408px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    padding-top: 372px;
+  }
+}
+
+.about__title {
+  margin-bottom: 56px;
+
+  @include vp-1199 {
+    margin-bottom: 35px;
+    margin-left: 6px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+}
+
+.about__info-container h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  max-width: 350px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 11px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+}
+
+.about__info-container p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include vp-767 {
+    line-height: 20px;
+  }
+}
+
+.about__history-container {
+  margin-bottom: 30px;
+
+  @include vp-1199 {
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 26px;
+  }
+}
