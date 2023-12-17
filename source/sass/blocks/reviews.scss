@@ -1,0 +1,141 @@
+.reviews {
+  padding-top: 30px;
+
+  @include vp-1199 {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+
+  @include vp-767 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+.reviews__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 55px;
+  margin-bottom: 30px;
+}
+
+.reviews__slider-buttons {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 6px;
+
+  @include vp-767 {
+    margin-bottom: 3px;
+  }
+}
+
+.reviews__swiper {
+  padding: 10px;
+
+  @include vp-1199 {
+    padding: 20px 0;
+  }
+
+  @include vp-767 {
+   gap: 0;
+  }
+}
+
+.reviews__list {
+  max-width: 1200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  //gap: 120px;
+
+  @include vp-1199 {
+  //  gap: 30px;
+
+  }
+
+  @include vp-767 {
+   gap: 0;
+  }
+}
+
+.reviews__item {
+  min-height: 293px;
+  max-width: 700px;
+  height: auto;
+  padding: 20px;
+  padding-right: 40px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0 0 20px 0 $color-resolution-blue-10;
+  background-color: $color-default-white;
+
+  @include vp-1199 {
+    max-width: 565px;
+    min-height: 277px;
+    padding-right: 30px;
+    box-shadow: 0 0 30px 0 $color-resolution-blue-10;
+  }
+
+  @include vp-767 {
+    min-height: 466px;
+    max-width: 290px;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 $color-resolution-blue-10;
+  }
+}
+
+.reviews__img {
+  min-width: 258px;
+  max-height: 253px;
+  background-color: $color-resolution-blue;
+
+  @include vp-1199 {
+    min-width: 186px;
+    min-height: 237px;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+    min-height: 169px;
+  }
+}
+
+
+.reviews__img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bg-image;
+  background-size: cover;
+}
+
+.reviews__content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.reviews__text p {
+margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.reviews__author h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.reviews__author p {
+  font-size: 12px;
+  line-height: 12px;
+}

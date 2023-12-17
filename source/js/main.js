@@ -6,6 +6,7 @@ import {playVideo} from './modules/video/play-video.js';
 import {createSliderHero} from './modules/sliders/hero-slider.js';
 import {createSliderTours} from './modules/sliders/tours-slider.js';
 import {createSliderTraining} from './modules/sliders/training-slider.js';
+import {createSliderReviews} from './modules/sliders/reviews-slider.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createSliderHero();
   createSliderTours();
   createSliderTraining();
+  createSliderReviews();
 
   // Modules
   // ---------------------------------

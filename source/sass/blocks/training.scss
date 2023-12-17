@@ -39,6 +39,10 @@
   @include vp-1199 {
     margin-bottom: 30px;
   }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .training__header p {
@@ -50,7 +54,7 @@
   }
 
   @include vp-767 {
-    width: 100%;
+    width: 310px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -137,7 +141,7 @@
   }
 
   @include vp-449 {
-    padding: 5vw;
+    padding: 14px;
   }
 
   @include vp-349 {
@@ -157,7 +161,7 @@
   }
 
   @include vp-449 {
-    height: 250px;
+    height: 200px;
   }
 
   @include vp-349 {
