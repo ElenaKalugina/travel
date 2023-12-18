@@ -2,12 +2,12 @@
   padding-top: 30px;
 
   @include vp-1199 {
-    padding-top: 37px;
+    padding-top: 27px;
     padding-bottom: 37px;
   }
 
   @include vp-767 {
-    padding-top: 30px;
+    padding-top: 8px;
     padding-bottom: 30px;
   }
 }
@@ -15,11 +15,24 @@
 
 .reviews__header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   min-height: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
+
+  @include vp-1199 {
+    margin-bottom: 36px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -2px;
+  }
+}
+
+.reviews__title {
+  @include vp-1199 {
+    margin-left: 1px;
+  }
 }
 
 .reviews__slider-buttons {
@@ -28,8 +41,14 @@
   align-items: center;
   margin-bottom: 6px;
 
+  @include vp-1199 {
+    align-items: flex-end;
+    margin-bottom: 1px;
+  }
+
   @include vp-767 {
-    margin-bottom: 3px;
+    margin-bottom: -3px;
+    align-self: flex-end;
   }
 }
 
@@ -41,7 +60,7 @@
   }
 
   @include vp-767 {
-   gap: 0;
+    gap: 0;
   }
 }
 
@@ -50,16 +69,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  //gap: 120px;
-
-  @include vp-1199 {
-  //  gap: 30px;
-
-  }
-
-  @include vp-767 {
-   gap: 0;
-  }
 }
 
 .reviews__item {
@@ -81,10 +90,11 @@
   }
 
   @include vp-767 {
+   // width: 100%;
     min-height: 466px;
-    max-width: 290px;
+    max-width: 100%;
     padding: 20px;
-    gap: 20px;
+    gap: 19px;
     flex-direction: column;
     box-shadow: 0 0 20px 0 $color-resolution-blue-10;
   }
@@ -107,7 +117,7 @@
 }
 
 
-.reviews__img img{
+.reviews__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -119,13 +129,57 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
+
+  @include vp-1199 {
+    gap: 25px;
+  }
+
+  @include vp-767 {
+    gap: 15px;
+  }
+}
+
+.reviews__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: -3px;
+
+  @include vp-1199 {
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
 }
 
 .reviews__text p {
-margin: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 22px;
+
+  @include vp-1199 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.reviews__author {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 9px;
+
+  @include vp-1199 {
+    gap: 6px;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
 }
 
 .reviews__author h4 {
@@ -133,9 +187,15 @@ margin: 0;
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 .reviews__author p {
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
 }

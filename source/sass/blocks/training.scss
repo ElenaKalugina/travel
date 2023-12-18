@@ -23,7 +23,7 @@
   margin-bottom: 31px;
 
   @include vp-1199 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   @include vp-767 {
@@ -69,13 +69,12 @@
   margin-bottom: 17px;
 
   @include vp-1199 {
-   margin-bottom: 27px;
+    margin-bottom: 27px;
   }
 
   @include vp-767 {
     margin-bottom: 22px;
   }
-
 }
 
 .training__slider-header h3 {
@@ -101,7 +100,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 38px;
 
@@ -149,11 +148,7 @@
   }
 }
 
-
-
-
 .training__img {
-  //min-height: 200px;
   height: 200px;
 
   @include vp-767 {
@@ -169,7 +164,7 @@
   }
 }
 
-.training__img img{
+.training__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -245,7 +240,7 @@
 .training__process-list {
   position: relative;
   list-style: none;
-  margin:0;
+  margin: 0;
   padding: 0;
   padding-bottom: 14px;
   width: 100%;
@@ -337,10 +332,9 @@
     svg {
       width: 21px;
       height: 21px;
-      margin-top:-5px
+      margin-top: -5px;
     }
   }
-
 }
 
 //синие точки сверху
@@ -363,6 +357,7 @@
 
   @include vp-767 {
     padding-top: 0;
+
     &::after {
       top: 44%;
       left: 0;
@@ -418,13 +413,13 @@
 .training__process-item--right p {
   @include vp-1199 {
     &::after {
-    position: absolute;
-    content: "";
-    bottom: 7px;
-    left: 0;
-    width: calc(100% + 17px);
-    height: 1px;
-    background-color: $color-accent-10;
+      position: absolute;
+      content: "";
+      bottom: 7px;
+      left: 0;
+      width: calc(100% + 17px);
+      height: 1px;
+      background-color: $color-accent-10;
     }
   }
 
@@ -460,13 +455,13 @@
 .training__process-item--down p {
   @include vp-1199 {
     &::after {
-    position: absolute;
-    content: "";
-    bottom: -41px;
-    left: 7px;
-    width: 1px;
-    height: 50px;
-    background-color: $color-accent-10;
+      position: absolute;
+      content: "";
+      bottom: -41px;
+      left: 7px;
+      width: 1px;
+      height: 50px;
+      background-color: $color-accent-10;
     }
   }
 

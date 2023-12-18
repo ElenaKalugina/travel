@@ -18,7 +18,7 @@ html {
   line-height: 24px;
   font-family: $ff-placeholder;
   color: $color-default-black;
-
+  scroll-behavior: smooth;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -38,15 +38,17 @@ body {
 }
 //при открытом меню блокирует скролл
 body.is-open {
-  overflow: hidden;
+  @include vp-1199 {
+    overflow: hidden;
 
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: $color-default-black-60;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $color-default-black-60;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+    }
   }
 }
 

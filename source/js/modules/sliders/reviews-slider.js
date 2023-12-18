@@ -7,7 +7,6 @@ const buttonPrev = document.querySelector('[data-set="reviews-prev"]');
 const createSliderReviews = () => {
 
   const swiperReviews = new Swiper(sliderReviews, {
-    // initialSlide: 0,
     slidesPerView: 'auto',
     centeredSlides: false,
 
