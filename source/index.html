@@ -250,7 +250,7 @@
                   </li>
                 </ul>
                 <div class="hero__media-container hero__media-container--audio">
-                  <iframe frameborder="0" style="border:none;width:395px;height:240px;" width="395" height="240"
+                  <iframe frameborder="0" style="border:none;width:395px;height:240px;" loading="lazy" width="395" height="240"
                     src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a
                       href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
                       фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
@@ -1275,6 +1275,99 @@
             </div>
           </div>
         </div>
+      </section>
+      <section class="advantages">
+
+          <div class="advantages__container">
+            <div class="advantages__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 1199px)" width="768" height="996"
+                  srcset="img/advantages/adv-clouds-tablet.webp 1x, img/advantages/adv-clouds-tablet@2x.webp 2x">
+                <source type="image/png" media="(max-width: 1199px)" width="768" height="996"
+                  srcset="img/advantages/adv-clouds-tablet.png 1x, img/advantages/adv-clouds-tablet@2x.png 2x">
+
+                <source type="image/webp" width="1440" height="447"
+                  srcset="img/advantages/adv-clouds-desktop.webp 1x, img/advantages/adv-clouds-desktop@2x.webp 2x">
+                <img src="img/advantages/adv-clouds-desktop.png" width="1440" height="447" srcset="img/advantages/adv-clouds-desktop@2x.png 2x"
+                  alt="">
+              </picture>
+            </div>
+            <h2 class="advantages__title title title--center" data-text="Преимущества">Преимущества</h2>
+            <div class="advantages__swiper swiper" data-set="advantages-slider">
+            <ul class="advantages__list swiper-wrapper">
+              <li class="advantages__item swiper-slide">
+                <div class="advantages__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" role="img">
+                    <use href="img/sprite.svg#adv-level"></use>
+                  </svg>
+                </div>
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности.
+                  Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даём гарантию полной
+                  безопасности во&nbsp;время всего тура.</p>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <div class="advantages__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" role="img">
+                  <use href="img/sprite.svg#adv-crown"></use>
+                </svg>
+              </div>
+                <h3>Экспертиза и&nbsp;знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике
+                  безопасности. Это&nbsp;гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надёжных руках и&nbsp;могут
+                   в&nbsp;полной мере насладиться опытом без&nbsp;опасений.</p>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <div class="advantages__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" role="img">
+                  <use href="img/sprite.svg#adv-boots"></use>
+                </svg>
+              </div>
+                <h3>Оборудование и&nbsp;снаряжение</h3>
+                <p>Мы&nbsp;предоставляем клиентам все&nbsp;необходимое оборудование, необходимое для&nbsp;путешествия.
+                   Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает
+                   путешествие более удобным и&nbsp;экономически выгодным.</p>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <div class="advantages__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" role="img">
+                  <use href="img/sprite.svg#adv-path"></use>
+                </svg>
+              </div>
+                <h3>Индивидуальные маршруты</h3>
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам.
+                  Мы&nbsp;также&nbsp;можем адаптировать маршруты к&nbsp;вашим конкретным потребностям и&nbsp;предпочтениям,
+                   чтобы&nbsp;вы&nbsp;получили индивидуальный опыт.</p>
+              </li>
+              <li class="advantages__item swiper-slide">
+                <div class="advantages__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" role="img">
+                  <use href="img/sprite.svg#adv-leaf"></use>
+                </svg>
+              </div>
+                <h3>Бережное отношение <br class="advantages__br">к&nbsp;природе</h3>
+                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем,
+                  что туры оказывают минимальное воздействие на природную среду. Наша компания следует
+                  принципу «Не оставлять следов».</p>
+              </li>
+            </ul>
+          </div>
+            <div class="advantages__slider-buttons">
+              <button class="advantages__slider-btn btn btn--nav" data-set="advantages-prev" type="button"
+                aria-label="Предыдущий слайд">
+                <svg width="14" height="9" viewBox="0 0 14 9" role="img" focusable="false" aria-hidden="true">
+                  <use href="/img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="advantages__slider-btn btn btn--nav" data-set="advantages-next" type="button"
+                aria-label="Следующий слайд">
+                <svg width="14" height="9" viewBox="0 0 14 9" role="img" focusable="false" aria-hidden="true">
+                  <use href="/img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
       </section>
       <section data-test="form">
 

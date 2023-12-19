@@ -59,3 +59,23 @@
     }
   }
 }
+
+.title--center {
+  justify-content: center;
+
+  &::after {
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    min-height: 26px;
+
+    &::after {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+
+}

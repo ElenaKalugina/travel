@@ -3,10 +3,11 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu/menu-toggle.js';
 import {playVideo} from './modules/video/play-video.js';
-import {createSliderHero} from './modules/sliders/hero-slider.js';
-import {createSliderTours} from './modules/sliders/tours-slider.js';
-import {createSliderTraining} from './modules/sliders/training-slider.js';
-import {createSliderReviews} from './modules/sliders/reviews-slider.js';
+import {createSliderHero} from './modules/sliders/slider-hero.js';
+import {createSliderTours} from './modules/sliders/slider-tours.js';
+import {createSliderTraining} from './modules/sliders/slider-training.js';
+import {createSliderReviews} from './modules/sliders/slider-reviews.js';
+import {createSliderAdvantages} from './modules/sliders/slider-advantages.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createSliderTours();
   createSliderTraining();
   createSliderReviews();
+  createSliderAdvantages();
 
   // Modules
   // ---------------------------------
