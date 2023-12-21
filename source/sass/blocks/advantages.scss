@@ -1,15 +1,14 @@
 .advantages {
   padding-top: 45px;
-  padding-bottom: 81px;
+  padding-bottom: 85px;
 
   @include vp-1199 {
     padding-top: 47px;
-    padding-bottom: 45px;
+    padding-bottom: 0;
   }
 
   @include vp-767 {
     padding-top: 23px;
-    padding-bottom: 40px;
   }
 }
 
@@ -64,10 +63,12 @@
 
   @include vp-1199 {
     padding-top: 47px;
+    padding-bottom: 34px;
   }
 
   @include vp-767 {
     padding-top: 20px;
+    padding-bottom: 14px;
   }
 }
 
@@ -172,6 +173,14 @@
   display: none;
 
   @include vp-1199 {
+    display: block;
+  }
+}
+
+.advantages__br-mobile {
+  display: none;
+
+  @include vp-767 {
     display: block;
   }
 }

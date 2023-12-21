@@ -8,6 +8,7 @@ import {createSliderTours} from './modules/sliders/slider-tours.js';
 import {createSliderTraining} from './modules/sliders/slider-training.js';
 import {createSliderReviews} from './modules/sliders/slider-reviews.js';
 import {createSliderAdvantages} from './modules/sliders/slider-advantages.js';
+import {createSliderGallery} from './modules/sliders/slider-gallery.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   createSliderTraining();
   createSliderReviews();
   createSliderAdvantages();
+  createSliderGallery();
 
   // Modules
   // ---------------------------------

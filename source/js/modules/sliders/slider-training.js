@@ -17,17 +17,19 @@ const createSliderTraining = () => {
       1200: {
         slidesPerView: 4,
         spaceBetween: 20,
+        initialSlide: 4,
       },
 
       768: {
         slidesPerView: 3,
         spaceBetween: 20,
+        initialSlide: 1,
       },
 
       320: {
         slidesPerView: 1,
         spaceBetween: 0,
-        initialSlide: 2,
+        initialSlide: 3,
       },
     },
   });
