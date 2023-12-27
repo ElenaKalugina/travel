@@ -35,6 +35,7 @@ body {
   background-color: $color-default-white;
   min-width: $vp-320;
   max-width: $vp-1920;
+  margin: 0 auto;
 }
 //при открытом меню блокирует скролл
 body.is-open {

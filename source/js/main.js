@@ -25,6 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
   createSliderReviews();
   createSliderAdvantages();
   createSliderGallery();
+  // const form = new Form();
+  // window.form = form;
+  // form.init();
 
   // Modules
   // ---------------------------------

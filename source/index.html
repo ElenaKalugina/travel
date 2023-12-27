@@ -1338,7 +1338,7 @@
                     srcset="img/gallery/slide-tablet5.jpg 1x, img/gallery/slide-tablet5@2x.jpg 2x">
 
                   <source type="image/webp" width="276" height="449"
-                    srcset="img/gallery/slide-desktop5.webp 1x, img/gallery/slide-desktop3@2x.webp 2x">
+                    srcset="img/gallery/slide-desktop5.webp 1x, img/gallery/slide-desktop5@2x.webp 2x">
                   <img src="img/gallery/slide-desktop5.jpg" width="276" height="449"
                     srcset="img/gallery/slide-desktop5@2x.jpg 2x" alt="Привал у реки.">
                 </picture>
@@ -1348,8 +1348,46 @@
           </div>
         </div>
       </section>
-      <section data-test="form">
+      <section class="feedback" data-test="form">
+        <h2 class="visually-hidden">Форма обратной связи.</h2>
+        <div class="feedback__img">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" width="350" height="620"
+              srcset="img/feedback/feedback-mobile.webp 1x, img/feedback/feedback-mobile@2x.webp 2x">
+            <source type="image/jpg" media="(max-width: 767px)" width="350" height="620"
+              srcset="img/feedback/feedback-mobile.jpg 1x, img/feedback/feedback-mobile@2x.jpg 2x">
 
+            <source type="image/webp" media="(max-width: 1199px)" width="768" height="680"
+              srcset="img/feedback/feedback-desktop.webp 1x, img/feedback/feedback-desktop@2x.webp 2x">
+            <source type="image/jpg" media="(max-width: 1199px)" width="768" height="680"
+              srcset="img/feedback/feedback-desktop.jpg 1x, img/feedback/feedback-desktop@2x.jpg 2x">
+
+            <source type="image/webp" width="1440" height="760"
+              srcset="img/feedback/feedback-desktop.webp 1x, img/feedback/feedback-desktop@2x.webp 2x">
+            <img src="img/feedback/feedback-desktop.jpg" width="1440" height="760"
+              srcset="img/feedback/feedback-desktop@2x.jpg 2x" alt="Лес.">
+          </picture>
+        </div>
+        <div class="feedback__container" data-form-validate="data-form-validate" data-callback="base">
+          <h3>Остались вопросы?</h3>
+          <p>Заполните форму и&nbsp;наш&nbsp;оператор свяжется с&nbsp;вами для&nbsp;консультации.</p>
+          <form class="feedback__form form"  action="https://echo.htmlacademy.ru/" method="post" data-form-feedback="data-form-feedback">
+            <fieldset class="form__info">
+              <legend class="visually-hidden">Телефон и электронная почта.</legend>
+              <div class="custom-input" data-validate-type="phone" data-required="data-required" data-message-base="Поле обязательно к заполнению">
+                <label aria-label="Введите ваш номер телефона.">
+                  <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="email" data-required="data-required" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля">
+                <label aria-label="Введите вашу электронную почту.">
+                  <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                </label>
+              </div>
+            </fieldset>
+            <button class="form__btn btn btn--form" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
