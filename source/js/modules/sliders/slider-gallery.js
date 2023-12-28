@@ -24,7 +24,7 @@ const createSliderGallery = () => {
 
       768: {
         slidesPerGroup: 2,
-        initialSlide: 5,
+        initialSlide: 0,
       },
 
       320: {

@@ -1,5 +1,5 @@
 .tours {
-
+  position: relative;
   padding-top: 103px;
   padding-bottom: 100px;
 
@@ -25,19 +25,15 @@
   position: absolute;
   z-index: -10;
   overflow: hidden;
-  top: -103px;
-  right: -121px;
+  top: 0;
+  right: 0;
   height: 1630px;
 
   @include vp-1199 {
-    top: -45px;
-    right: -45px;
     height: 1364px;
   }
 
   @include vp-767 {
-    right: -15px;
-    top: 90px;
     height: 595px;
   }
 }

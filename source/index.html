@@ -63,7 +63,7 @@
             <a class="nav__menu-link" href="#gallery">Фотографии</a>
           </li>
           <li class="nav__menu-item">
-            <a class="nav__menu-link" href="#contacts">Контакты</a>
+            <a class="nav__menu-link" href="#contact">Контакты</a>
           </li>
         </ul>
 
@@ -268,30 +268,30 @@
     </header>
     <main>
       <section class="tours" data-test="tours" id="tours">
+        <div class="tours__background">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/tours/bg-clouds-mobile.webp 1x, img/tours/bg-clouds-mobile@2x.webp 2x" width="141"
+              height="595">
+            <source type="image/png" media="(max-width: 767px)"
+              srcset="img/tours/bg-clouds-mobile.png 1x, img/tours/bg-clouds-mobile@2x.png 2x" width="141"
+              height="595">
+
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="img/tours/bg-clouds-tablet.webp 1x, img/tours/bg-clouds-tablet@2x.webp 2x" width="602"
+              height="1364">
+            <source type="image/png" media="(max-width: 1199px)"
+              srcset="img/tours/bg-clouds-tablet.png 1x, img/tours/bg-clouds-tablet@2x.png 2x" width="602"
+              height="1364">
+
+            <source type="image/webp" srcset="img/tours/bg-clouds.webp 1x, img/tours/bg-clouds@2x.webp 2x"
+              width="602" height="1630">
+            <img src="img/tours/bg-clouds.png" srcset="img/tours/bg-clouds@2x.png 2x" width="602" height="1630"
+              alt="">
+          </picture>
+        </div>
         <div class="container">
           <div class="tours__container">
-            <div class="tours__background">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="img/tours/bg-clouds-mobile.webp 1x, img/tours/bg-clouds-mobile@2x.webp 2x" width="141"
-                  height="595">
-                <source type="image/png" media="(max-width: 767px)"
-                  srcset="img/tours/bg-clouds-mobile.png 1x, img/tours/bg-clouds-mobile@2x.png 2x" width="141"
-                  height="595">
-
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="img/tours/bg-clouds-tablet.webp 1x, img/tours/bg-clouds-tablet@2x.webp 2x" width="602"
-                  height="1364">
-                <source type="image/png" media="(max-width: 1199px)"
-                  srcset="img/tours/bg-clouds-tablet.png 1x, img/tours/bg-clouds-tablet@2x.png 2x" width="602"
-                  height="1364">
-
-                <source type="image/webp" srcset="img/tours/bg-clouds.webp 1x, img/tours/bg-clouds@2x.webp 2x"
-                  width="602" height="1630">
-                <img src="img/tours/bg-clouds.png" srcset="img/tours/bg-clouds@2x.png 2x" width="602" height="1630"
-                  alt="">
-              </picture>
-            </div>
             <div class="tours__header">
               <h2 class="tours__title title" data-text="Ближайшие туры">Ближайшие туры</h2>
               <div class="tours__slider-buttons">
@@ -868,6 +868,24 @@
         </div>
       </section>
       <section class="about" data-test="about" id="about">
+        <div class="about__img">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" width="434" height="400"
+              srcset="img/about/about-mobile.webp 1x, img/about/about-mobile@2x.webp 2x">
+            <source type="image/png" media="(max-width: 767px)" width="434" height="400"
+              srcset="img/about/about-mobile.png 1x, img/about/about-mobile@2x.png 2x">
+
+            <source type="image/webp" media="(max-width: 1199px)" width="452" height="350"
+              srcset="img/about/about-tablet.webp 1x, img/about/about-tablet@2x.webp 2x">
+            <source type="image/png" media="(max-width: 1199px)" width="452" height="350"
+              srcset="img/about/about-tablet.png 1x, img/about/about-tablet@2x.png 2x">
+
+            <source type="image/webp" width="602" height="474"
+              srcset="img/about/about-desktop.webp 1x, img/about/about-desktop@2x.webp 2x">
+            <img src="img/about/about-desktop.png" width="602" height="474" srcset="img/about/about-desktop@2x.png 2x"
+              alt="Группа туристов на горной тропе.">
+          </picture>
+        </div>
         <div class="about__container">
           <div class="about__clouds">
             <picture>
@@ -880,24 +898,6 @@
                 srcset="img/about/clouds-desktop.webp 1x, img/about/clouds-desktop@2x.webp 2x">
               <img src="img/about/clouds-desktop.png" width="620" height="280"
                 srcset="img/about/clouds-desktop@2x.png 2x" alt="">
-            </picture>
-          </div>
-          <div class="about__img">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" width="434" height="400"
-                srcset="img/about/about-mobile.webp 1x, img/about/about-mobile@2x.webp 2x">
-              <source type="image/png" media="(max-width: 767px)" width="434" height="400"
-                srcset="img/about/about-mobile.png 1x, img/about/about-mobile@2x.png 2x">
-
-              <source type="image/webp" media="(max-width: 1199px)" width="452" height="350"
-                srcset="img/about/about-tablet.webp 1x, img/about/about-tablet@2x.webp 2x">
-              <source type="image/png" media="(max-width: 1199px)" width="452" height="350"
-                srcset="img/about/about-tablet.png 1x, img/about/about-tablet@2x.png 2x">
-
-              <source type="image/webp" width="602" height="474"
-                srcset="img/about/about-desktop.webp 1x, img/about/about-desktop@2x.webp 2x">
-              <img src="img/about/about-desktop.png" width="602" height="474" srcset="img/about/about-desktop@2x.png 2x"
-                alt="Группа туристов на горной тропе.">
             </picture>
           </div>
           <div class="about__info-container">
@@ -1344,6 +1344,84 @@
                 </picture>
               </div>
             </li>
+            <li class="gallery__item gallery__item--first swiper-slide">
+              <div class="gallery__img">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="159" height="260"
+                    srcset="img/gallery/slide-mobile1.webp 1x, img/gallery/slide-mobile1@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="159" height="260"
+                    srcset="img/gallery/slide-mobile1.jpg 1x, img/gallery/slide-mobile1@2x.jpg 2x">
+
+                  <source type="image/webp" media="(max-width: 1199px)" width="253" height="450"
+                    srcset="img/gallery/slide-tablet1.webp 1x, img/gallery/slide-tablet1@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)" width="253" height="450"
+                    srcset="img/gallery/slide-tablet1.jpg 1x, img/gallery/slide-tablet1@2x.jpg 2x">
+
+                  <source type="image/webp" width="275" height="449"
+                    srcset="img/gallery/slide-desktop1.webp 1x, img/gallery/slide-desktop1@2x.webp 2x">
+                  <img src="img/gallery/slide-desktop1.jpg" width="275" height="449"
+                    srcset="img/gallery/slide-desktop1@2x.jpg 2x" alt="Парень на вершине горы.">
+                </picture>
+              </div>
+            </li>
+            <li class="gallery__item gallery__item--twice swiper-slide">
+              <div class="gallery__img gallery__img--first">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="159" height="100"
+                    srcset="img/gallery/slide-mobile4-1.webp 1x, img/gallery/slide-mobile4-1@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="159" height="100"
+                    srcset="img/gallery/slide-mobile4-1.jpg 1x, img/gallery/slide-mobile4-1@2x.jpg 2x">
+
+                  <source type="image/webp" media="(max-width: 1199px)" width="253" height="180"
+                    srcset="img/gallery/slide-tablet4-1.webp 1x, img/gallery/slide-tablet4-1@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)" width="253" height="180"
+                    srcset="img/gallery/slide-tablet4-1.jpg 1x, img/gallery/slide-tablet4-1@2x.jpg 2x">
+
+                  <source type="image/webp" width="298" height="179"
+                    srcset="img/gallery/slide-desktop4-1.webp 1x, img/gallery/slide-desktop4-1@2x.webp 2x">
+                  <img src="img/gallery/slide-desktop4-1.jpg" width="298" height="179"
+                    srcset="img/gallery/slide-desktop4-1@2x.jpg 2x" alt="Горная тропа зимой.">
+                </picture>
+                </div>
+                <div class="gallery__img gallery__img--second">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="159" height="157"
+                    srcset="img/gallery/slide-mobile4-2.webp 1x, img/gallery/slide-mobile4-2@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="159" height="157"
+                    srcset="img/gallery/slide-mobile4-2.jpg 1x, img/gallery/slide-mobile4-2@2x.jpg 2x">
+
+                  <source type="image/webp" media="(max-width: 1199px)" width="253" height="265"
+                    srcset="img/gallery/slide-tablet4-2.webp 1x, img/gallery/slide-tablet4-2@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)" width="253" height="265"
+                    srcset="img/gallery/slide-tablet4-2.jpg 1x, img/gallery/slide-tablet4-2@2x.jpg 2x">
+
+                  <source type="image/webp" width="298" height="265"
+                    srcset="img/gallery/slide-desktop4-2.webp 1x, img/gallery/slide-desktop4-2@2x.webp 2x">
+                  <img src="img/gallery/slide-desktop4-2.jpg" width="298" height="265"
+                    srcset="img/gallery/slide-desktop4-2@2x.jpg 2x" alt="Палатка на фоне ночного звездного неба.">
+                </picture>
+              </div>
+            </li>
+            <li class="gallery__item gallery__item--third swiper-slide">
+              <div class="gallery__img">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" width="159" height="260"
+                    srcset="img/gallery/slide-mobile3.webp 1x, img/gallery/slide-mobile3@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 767px)" width="159" height="260"
+                    srcset="img/gallery/slide-mobile3.jpg 1x, img/gallery/slide-mobile3@2x.jpg 2x">
+
+                  <source type="image/webp" media="(max-width: 1199px)" width="253" height="450"
+                    srcset="img/gallery/slide-tablet3.webp 1x, img/gallery/slide-tablet3@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)" width="253" height="450"
+                    srcset="img/gallery/slide-tablet3.jpg 1x, img/gallery/slide-tablet3@2x.jpg 2x">
+
+                  <source type="image/webp" width="272" height="449"
+                    srcset="img/gallery/slide-desktop3.webp 1x, img/gallery/slide-desktop3@2x.webp 2x">
+                  <img src="img/gallery/slide-desktop3.jpg" width="272" height="449"
+                    srcset="img/gallery/slide-desktop3@2x.jpg 2x" alt="Горная тропа.">
+                </picture>
+              </div>
+            </li>
           </ul>
           </div>
         </div>
@@ -1358,9 +1436,9 @@
               srcset="img/feedback/feedback-mobile.jpg 1x, img/feedback/feedback-mobile@2x.jpg 2x">
 
             <source type="image/webp" media="(max-width: 1199px)" width="768" height="680"
-              srcset="img/feedback/feedback-desktop.webp 1x, img/feedback/feedback-desktop@2x.webp 2x">
+              srcset="img/feedback/feedback-tablet.webp 1x, img/feedback/feedback-tablet@2x.webp 2x">
             <source type="image/jpg" media="(max-width: 1199px)" width="768" height="680"
-              srcset="img/feedback/feedback-desktop.jpg 1x, img/feedback/feedback-desktop@2x.jpg 2x">
+              srcset="img/feedback/feedback-tablet.jpg 1x, img/feedback/feedback-tablet@2x.jpg 2x">
 
             <source type="image/webp" width="1440" height="760"
               srcset="img/feedback/feedback-desktop.webp 1x, img/feedback/feedback-desktop@2x.webp 2x">
@@ -1390,7 +1468,63 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer" data-test="footer">
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__container">
+            <div class="contact__info">
+              <div class="contact__header">
+                <h2 class="contact__title title title--h3" data-text="Контакты">Контакты</h2>
+                <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас&nbsp;способом или&nbsp;приходите
+                  к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями
+                  и&nbsp;подобрать для&nbsp;вас&nbsp;тур.</p>
+              </div>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <svg width="26" height="26" role="img">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <h3 class="contact__item-title">Телефон</h3>
+                  <a href="tel:7-983-745-45-45">+7&nbsp;983&nbsp;745-45-45</a>
+                </li>
+                <li class="contact__item">
+                  <svg width="26" height="26" role="img">
+                    <use href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <h3 class="contact__item-title">Email</h3>
+                  <a href="mailto:info@lifetour.com">info@lifetour.com</a>
+                </li>
+                <li class="contact__item">
+                  <svg width="26" height="26" role="img">
+                    <use href="img/sprite.svg#pin-stroke"></use>
+                  </svg>
+                  <h3 class="contact__item-title">Адрес</h3>
+                  <address>г. Москва, пр-т Мира,<br class="contact__br-mobile"> д. 14, офис 101</address>
+                </li>
+              </ul>
+            </div>
+            <div class="contact__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="350" height="320"
+                  srcset="img/contact/map-mobile.webp 1x, img/contact/map-mobile@2x.webp 2x">
+                <source type="image/jpg" media="(max-width: 767px)" width="350" height="320"
+                  srcset="img/contact/map-mobile.jpg 1x, img/contact/map-mobile@2x.jpg 2x">
+
+                <source type="image/webp" media="(max-width: 1199px)" width="768" height="340"
+                  srcset="img/contact/map-tablet.webp 1x, img/contact/map-tablet@2x.webp 2x">
+                <source type="image/jpg" media="(max-width: 1199px)" width="768" height="340"
+                  srcset="img/contact/map-tablet.jpg 1x, img/contact/map-tablet@2x.jpg 2x">
+
+                <source type="image/webp" width="585" height="324"
+                  srcset="img/contact/map-desktop.webp 1x, img/contact/map-desktop@2x.webp 2x">
+                <img src="img/contact/map-desktop.jpg" width="585" height="324"
+                  srcset="img/contact/map-desktop@2x.jpg 2x" alt="Адрес на карте.">
+              </picture>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <div class="container"></div>
     </footer>
   </div>
