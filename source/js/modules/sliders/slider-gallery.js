@@ -29,7 +29,7 @@ const createSliderGallery = () => {
 
       320: {
         slidesPerGroup: 2,
-        initialSlide: 5,
+        initialSlide: 0,
       },
     },
   });
