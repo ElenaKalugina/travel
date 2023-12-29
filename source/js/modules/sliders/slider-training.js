@@ -4,9 +4,9 @@ const sliderTraining = document.querySelector('[data-set="training-slider"]');
 const buttonNext = document.querySelector('[data-set="training-next"]');
 const buttonPrev = document.querySelector('[data-set="training-prev"]');
 
-const createSliderTraining = () => {
+const initSliderTraining = () => {
 
-  const SliderTraining = new Swiper(sliderTraining, {
+  const newSliderTraining = new Swiper(sliderTraining, {
 
     navigation: {
       nextEl: buttonNext,
@@ -34,7 +34,13 @@ const createSliderTraining = () => {
     },
   });
 
-  return SliderTraining;
+  return newSliderTraining;
+};
+
+const createSliderTraining = () => {
+  if (document.body.contains(sliderTraining)) {
+    initSliderTraining();
+  }
 };
 
 export {createSliderTraining};

@@ -4,9 +4,9 @@ const sliderTours = document.querySelector('[data-set="tours-slider"]');
 const buttonNext = document.querySelector('[data-set="tours-next"]');
 const buttonPrev = document.querySelector('[data-set="tours-prev"]');
 
-const createSliderTours = () => {
+const initSliderTours = () => {
 
-  const SliderTours = new Swiper(sliderTours, {
+  const newSliderTours = new Swiper(sliderTours, {
 
     navigation: {
       nextEl: buttonNext,
@@ -33,7 +33,13 @@ const createSliderTours = () => {
       },
     },
   });
-  return SliderTours;
+  return newSliderTours;
+};
+
+const createSliderTours = () => {
+  if (document.body.contains(sliderTours)) {
+    initSliderTours();
+  }
 };
 
 export {createSliderTours};

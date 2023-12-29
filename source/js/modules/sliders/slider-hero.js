@@ -2,9 +2,9 @@ import Swiper from '../../vendor/swiper';
 const sliderHero = document.querySelector('[data-set="hero-slider"]');
 const paginationHero = document.querySelector('[data-set="hero-pagination"]');
 
-const createSliderHero = () => {
+const initSliderHero = () => {
 
-  const swiperHero = new Swiper(sliderHero, {
+  const newSliderHero = new Swiper(sliderHero, {
 
     pagination: {
       el: paginationHero,
@@ -19,7 +19,13 @@ const createSliderHero = () => {
     loop: true,
   });
 
-  return swiperHero;
+  return newSliderHero;
+};
+
+const createSliderHero = () => {
+  if (document.body.contains(sliderHero)) {
+    initSliderHero();
+  }
 };
 
 export {createSliderHero};

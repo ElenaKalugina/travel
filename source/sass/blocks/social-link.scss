@@ -20,13 +20,6 @@
     }
   }
 
-  &--footer-vk {
-    @include vp-767 {
-      width: 16px;
-      height: 10px;
-    }
-  }
-
   @include hover-focus {
     color: $color-default-black;
     background-color: $color-default-white;
@@ -48,3 +41,11 @@
   }
 }
 
+.social-link--footer-vk {
+  svg {
+    @include vp-767 {
+      width: 16px;
+      height: 10px;
+    }
+  }
+}

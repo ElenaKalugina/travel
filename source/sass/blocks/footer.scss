@@ -4,7 +4,7 @@
   border-top: 1px solid $color-default-black-20;
 
   @include vp-1199 {
-    padding-top: 30px;
+    padding-top: 29px;
     padding-bottom: 20px;
   }
 
@@ -58,6 +58,7 @@
     svg {
       color: $color-default-black-30;
     }
+
     cursor: not-allowed;
     pointer-events: none;
   }
@@ -180,7 +181,7 @@
     }
 
     @include active {
-      color: $color-accent;;
+      color: $color-accent;
     }
 
     @include without-outline;

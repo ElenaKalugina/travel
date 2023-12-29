@@ -1,5 +1,4 @@
-.custom-input,
-.custom-textarea {
+.custom-input {
   position: relative;
   display: flex;
   padding-bottom: 20px;
@@ -17,8 +16,7 @@
     align-items: center;
     width: 100%;
 
-    input,
-    textarea {
+    input {
       flex-grow: 1;
       width: 360px;
       min-height: 56px;
@@ -28,8 +26,8 @@
       border: 1px solid transparent;
       border-radius: 2px;
       outline: none;
-
       transition: border 0.3s ease;
+
       &::placeholder {
         opacity: 0.5;
       }
@@ -44,38 +42,10 @@
       @include vp-767 {
         min-height: 49px;
       }
-
-      @include hover {
-        border: 1px solid $color-accent;
-
-        &::placeholder {
-          color: $color-accent;
-        }
-      }
-
-      @include focus {
-        border: 1px solid $color-resolution-blue;
-      }
     }
   }
 
-  &__error {
-    position: absolute;
-    right: 0;
-    bottom: 35px;
-
-    color: $color-default-black;
-
-    opacity: 0;
-
-    transition: opacity 0.3s ease;
-
-    @media screen and (max-width: 767px) {
-      bottom: 20px;
-    }
-  }
-
-  &.is-invalid {
+  .is-invalid {
     input,
     textarea {
       border: 1px solid $color-torch-red;
@@ -86,7 +56,7 @@
     }
   }
 
-  &.is-valid {
+  .is-valid {
     input {
       border: 1px solid $color-resolution-blue;
 
@@ -102,11 +72,11 @@
     left: 0;
     bottom: -5px;
 
-    &.is-invalid {
+    .is-invalid {
       color: $color-torch-red;
     }
 
-    &.is-valid {
+    .is-valid {
       color: $color-default-white;
     }
 
@@ -120,5 +90,19 @@
       font-size: 8px;
       line-height: 8px;
     }
+  }
+}
+
+.custom-input input {
+  @include hover {
+    border: 1px solid $color-accent;
+
+    &::placeholder {
+      color: $color-accent;
+    }
+  }
+
+  @include focus {
+    border: 1px solid $color-resolution-blue;
   }
 }

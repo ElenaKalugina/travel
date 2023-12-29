@@ -4,9 +4,9 @@ const sliderReviews = document.querySelector('[data-set="reviews-slider"]');
 const buttonNext = document.querySelector('[data-set="reviews-next"]');
 const buttonPrev = document.querySelector('[data-set="reviews-prev"]');
 
-const createSliderReviews = () => {
+const initSliderReviews = () => {
 
-  const swiperReviews = new Swiper(sliderReviews, {
+  const newSliderReviews = new Swiper(sliderReviews, {
     slidesPerView: 'auto',
     centeredSlides: false,
 
@@ -34,7 +34,13 @@ const createSliderReviews = () => {
     loop: true,
   });
 
-  return swiperReviews;
+  return newSliderReviews;
+};
+
+const createSliderReviews = () => {
+  if (document.body.contains(sliderReviews)) {
+    initSliderReviews();
+  }
 };
 
 export {createSliderReviews};

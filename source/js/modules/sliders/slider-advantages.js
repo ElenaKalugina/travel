@@ -7,8 +7,8 @@ const buttonPrev = document.querySelector('[data-set="advantages-prev"]');
 let newSliderAdvantages = null;
 const desktop = window.matchMedia('(min-width: 1200px)');
 
-const createSliderAdvantages = () => {
-  if (desktop.matches) {
+const initSliderAdvantages = () => {
+  if (desktop.matches && sliderAdvantages) {
 
     newSliderAdvantages = new Swiper(sliderAdvantages, {
       loop: true,
@@ -22,11 +22,14 @@ const createSliderAdvantages = () => {
         prevEl: buttonPrev,
       },
     });
+  }
+};
 
+const createSliderAdvantages = () => {
+  if (!desktop.matches && newSliderAdvantages) {
+    newSliderAdvantages.destroy();
   } else {
-    if (newSliderAdvantages !== null) {
-      newSliderAdvantages.destroy();
-    }
+    initSliderAdvantages();
   }
 };
 

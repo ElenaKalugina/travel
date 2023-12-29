@@ -1,22 +1,24 @@
 .advantages {
   padding-top: 45px;
-  padding-bottom: 85px;
+  padding-bottom: 81px;
 
   @include vp-1199 {
     padding-top: 47px;
-    padding-bottom: 0;
+    padding-bottom: 11px;
   }
 
   @include vp-767 {
-    padding-top: 23px;
+    padding-top: 44px;
+    padding-bottom: 24px;
   }
 }
 
 .advantages__container {
   position: relative;
- // width: 100%;
-  //max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 
   @include vp-1199 {
@@ -50,12 +52,6 @@
   width: 100%;
 }
 
-.advantages__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .advantages__swiper {
   padding: 0;
   padding-top: 48px;
@@ -67,13 +63,13 @@
   }
 
   @include vp-767 {
-    padding-top: 20px;
+    padding-top: 19px;
     padding-bottom: 14px;
   }
 }
 
 .advantages__list {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100vw;
   list-style: none;
   padding: 0;
@@ -93,7 +89,6 @@
 }
 
 .advantages__item {
-  //max-width: 381px;
   height: auto;
   padding: 38px 19px;
   display: flex;
@@ -116,15 +111,23 @@
 .advantages__item:last-child:nth-child(odd) {
   @include vp-1199 {
     max-width: 380px;
+  }
 
-    h3 {
+  @include vp-767 {
+    max-width: 100%;
+  }
+
+  h3 {
+    @include vp-1199 {
       margin-left: -3px;
       margin-top: 1px;
     }
   }
 
-  @include vp-767 {
-    max-width: 100%;
+  .advantages__icon {
+    @include vp-767 {
+      margin-bottom: 21px;
+    }
   }
 }
 
@@ -198,8 +201,8 @@
   @include vp-767 {
     font-size: 12px;
     line-height: 18px;
+    font-weight: 400;
   }
-
 }
 
 .advantages__slider-buttons {

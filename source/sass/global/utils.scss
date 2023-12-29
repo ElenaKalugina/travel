@@ -17,12 +17,25 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
+//при открытом меню блокирует скролл
+.wrapper.is-open {
+  @include vp-1199 {
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $color-default-black-60;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      z-index: 2;
+    }
+  }
 }
 
 .visually-hidden {
@@ -33,18 +46,14 @@
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
 
 .scroll-lock-ios {
   position: fixed;
-
   overflow: hidden;
 }
 
@@ -59,11 +68,6 @@
   &::-webkit-scrollbar {
     display: none;
   }
-}
-
-.no-transition {
-  /* stylelint-disable-next-line */
-  transition: none !important;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

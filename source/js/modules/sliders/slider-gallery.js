@@ -4,7 +4,7 @@ const sliderGallery = document.querySelector('[data-set="gallery-slider"]');
 const buttonNext = document.querySelector('[data-set="gallery-next"]');
 const buttonPrev = document.querySelector('[data-set="gallery-prev"]');
 
-const createSliderGallery = () => {
+const initSliderGallery = () => {
 
   const newSliderGallery = new Swiper(sliderGallery, {
     slidesPerView: 'auto',
@@ -19,7 +19,7 @@ const createSliderGallery = () => {
     breakpoints: {
       1200: {
         slidesPerGroup: 2,
-        initialSlide: 5,
+        initialSlide: 0,
       },
 
       768: {
@@ -35,6 +35,13 @@ const createSliderGallery = () => {
   });
 
   return newSliderGallery;
+};
+
+
+const createSliderGallery = () => {
+  if (document.body.contains(sliderGallery)) {
+    initSliderGallery();
+  }
 };
 
 export {createSliderGallery};
